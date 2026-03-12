@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trade Forex & Gold with TMGM and earn up to $700 USD in trading bonus credit. Opt in now — limited to April 2026.">
+    <meta name="keywords" content="TMGM trading bonus, forex rebate, gold trading credit, ECN promotion 2026, CFD bonus">
+    <title>Trading Bonus Credit | TMGM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --navy-dark: #0B1426;
+            --navy: #0F1E36;
+            --navy-mid: #152A4A;
+            --blue-primary: #2563EB;
+            --blue-bright: #3B82F6;
+            --blue-light: #60A5FA;
+            --blue-glow: #1D4ED8;
+            --green-accent: #22C55E;
+            --gold-accent: #F59E0B;
+            --white: #FFFFFF;
+            --gray-50: #F8FAFC;
+            --gray-100: #F1F5F9;
+            --gray-200: #E2E8F0;
+            --gray-300: #CBD5E1;
+            --gray-500: #64748B;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1E293B;
+            --text-dark: #0F172A;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-main);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ============ TOP NAV ============ */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(11, 20, 38, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding: 0 40px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--blue-primary), var(--green-accent));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-logo-icon svg { width: 24px; height: 24px; }
+        .nav-logo-text {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: 1.5px;
+        }
+        .nav-logo-sub {
+            font-size: 7px;
+            color: var(--gray-500);
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            display: block;
+            margin-top: -4px;
+        }
+        .nav-right { display: flex; align-items: center; gap: 16px; }
+        .nav-btn {
+            padding: 8px 24px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-family: var(--font-main);
+        }
+        .nav-btn-outline {
+            border: 1px solid rgba(255,255,255,0.3);
+            background: transparent;
+            color: var(--white);
+        }
+        .nav-btn-outline:hover { border-color: var(--white); }
+        .nav-lang {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--white);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.05);
+        }
+        .nav-lang img { width: 18px; height: 13px; border-radius: 2px; }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            position: relative;
+            min-height: 580px;
+            background: linear-gradient(160deg, #0B1426 0%, #0F1E36 40%, #152A4A 100%);
+            padding: 140px 40px 80px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(34, 197, 94, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        /* Grid pattern overlay */
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-text { max-width: 560px; }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 99, 235, 0.15);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            border-radius: 100px;
+            padding: 6px 16px;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.6s ease;
+        }
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--green-accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        .hero-badge span {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--blue-light);
+            letter-spacing: 0.5px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.15;
+            margin-bottom: 16px;
+            animation: fadeInUp 0.6s ease 0.1s both;
+        }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--blue-bright), var(--green-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--gray-300);
+            line-height: 1.6;
+            margin-bottom: 12px;
+            animation: fadeInUp 0.6s ease 0.2s both;
+        }
+        .hero-period {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 10px 18px;
+            margin-bottom: 28px;
+            animation: fadeInUp 0.6s ease 0.25s both;
+        }
+        .hero-period i { color: var(--blue-light); font-size: 14px; }
+        .hero-period span { color: var(--gray-200); font-size: 14px; font-weight: 500; }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--blue-primary), var(--blue-glow));
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+            animation: fadeInUp 0.6s ease 0.3s both;
+        }
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.5);
+        }
+        .hero-tc {
+            font-size: 12px;
+            color: var(--gray-500);
+            margin-top: 16px;
+            animation: fadeInUp 0.6s ease 0.35s both;
+        }
+        /* Hero visual */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }
+        .hero-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 36px;
+            width: 100%;
+            max-width: 420px;
+        }
+        .hero-card-label {
+            font-size: 13px;
+            color: var(--gray-500);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+        .hero-card-amount {
+            font-size: 56px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--blue-bright), var(--green-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+        .hero-card-sub {
+            font-size: 15px;
+            color: var(--gray-300);
+            margin-bottom: 28px;
+        }
+        .hero-card-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .hero-card-row-label { font-size: 14px; color: var(--gray-500); }
+        .hero-card-row-value { font-size: 14px; color: var(--white); font-weight: 600; }
+        .hero-card-row-value.accent { color: var(--green-accent); }
+
+        /* ============ STEPS SECTION ============ */
+        .steps-section {
+            padding: 80px 40px;
+            background: var(--white);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+        .section-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: var(--gray-600);
+            margin-bottom: 40px;
+        }
+        /* Toggle */
+        .toggle-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+        .toggle-group {
+            display: flex;
+            background: var(--gray-100);
+            border-radius: 12px;
+            padding: 4px;
+            gap: 4px;
+        }
+        .toggle-btn {
+            padding: 12px 32px;
+            border-radius: 10px;
+            border: none;
+            background: transparent;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--gray-600);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: var(--font-main);
+            position: relative;
+        }
+        .toggle-btn.active {
+            background: var(--white);
+            color: var(--blue-primary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .toggle-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 30px;
+            height: 3px;
+            background: var(--blue-primary);
+            border-radius: 2px;
+            transition: transform 0.3s;
+        }
+        .toggle-btn.active::after { transform: translateX(-50%) scaleX(1); }
+
+        /* Step cards */
+        .steps-content { display: block; }
+        .steps-content.hidden { display: none; }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            position: relative;
+        }
+        .steps-grid::before {
+            content: '';
+            position: absolute;
+            top: 48px;
+            left: 16.66%;
+            right: 16.66%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--blue-primary), var(--green-accent));
+            opacity: 0.3;
+        }
+        .step-card {
+            text-align: center;
+            position: relative;
+            padding: 0 16px;
+        }
+        .step-number {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--blue-primary), var(--blue-glow));
+            color: var(--white);
+            font-size: 28px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+        }
+        .step-icon {
+            font-size: 28px;
+            color: var(--blue-primary);
+            margin-bottom: 12px;
+        }
+        .step-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+        .step-desc {
+            font-size: 14px;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+        .steps-cta-wrapper {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--blue-primary), var(--blue-glow));
+            color: var(--white);
+            padding: 14px 40px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+            font-family: var(--font-main);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+        }
+        .steps-tc {
+            text-align: center;
+            font-size: 12px;
+            color: var(--gray-500);
+            margin-top: 16px;
+        }
+
+        /* ============ ELIGIBLE PRODUCTS ============ */
+        .products-section {
+            padding: 80px 40px;
+            background: var(--gray-50);
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+            max-width: 750px;
+            margin: 0 auto 24px;
+        }
+        .product-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 36px 28px;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+        .product-card.forex::before {
+            background: linear-gradient(90deg, var(--blue-primary), var(--blue-bright));
+        }
+        .product-card.gold::before {
+            background: linear-gradient(90deg, var(--gold-accent), #FBBF24);
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+        }
+        .product-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 28px;
+        }
+        .forex .product-icon {
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--blue-primary);
+        }
+        .gold .product-icon {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--gold-accent);
+        }
+        .product-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+        .product-rebate {
+            font-size: 14px;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+        .product-rebate strong {
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+        .products-note {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: 8px;
+        }
+        .products-note span { color: var(--blue-primary); }
+        .products-tc {
+            text-align: center;
+            font-size: 12px;
+            color: var(--gray-500);
+            margin-top: 12px;
+        }
+
+        /* ============ KEY TERMS ============ */
+        .terms-section {
+            padding: 80px 40px;
+            background: var(--white);
+        }
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .term-item {
+            display: flex;
+            gap: 14px;
+            padding: 20px;
+            background: var(--gray-50);
+            border-radius: 12px;
+            border: 1px solid var(--gray-200);
+        }
+        .term-icon {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 10px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--blue-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        .term-label {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .term-value {
+            font-size: 14px;
+            color: var(--gray-600);
+            line-height: 1.5;
+        }
+        .term-item.full-width {
+            grid-column: 1 / -1;
+        }
+
+        /* ============ FAQ SECTION ============ */
+        .faq-section {
+            padding: 80px 40px;
+            background: var(--gray-50);
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--white);
+            border-radius: 12px;
+            border: 1px solid var(--gray-200);
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .faq-item:hover { border-color: var(--blue-primary); }
+        .faq-question {
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .faq-question h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-dark);
+            flex: 1;
+            padding-right: 16px;
+        }
+        .faq-chevron {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            border-radius: 8px;
+            background: var(--gray-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-600);
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        .faq-item.open .faq-chevron {
+            background: var(--blue-primary);
+            color: var(--white);
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+        .faq-answer-inner {
+            padding: 0 24px 20px;
+            font-size: 14px;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        /* ============ TRUST BADGES ============ */
+        .trust-section {
+            padding: 80px 40px;
+            background: var(--white);
+        }
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .trust-card {
+            text-align: center;
+            padding: 28px 16px;
+        }
+        .trust-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--gray-50);
+            border: 2px solid var(--gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 28px;
+            color: var(--blue-primary);
+            transition: all 0.3s;
+        }
+        .trust-card:hover .trust-icon {
+            border-color: var(--blue-primary);
+            background: rgba(37, 99, 235, 0.05);
+        }
+        .trust-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+
+        /* ============ GET STARTED BANNER ============ */
+        .cta-banner {
+            padding: 48px 40px;
+            background: linear-gradient(135deg, var(--blue-primary), #1E40AF, var(--blue-glow));
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+        }
+        .cta-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        .cta-text h3 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+        .cta-text h3 .green { color: var(--green-accent); }
+        .cta-text p {
+            font-size: 15px;
+            color: rgba(255,255,255,0.75);
+        }
+        .cta-buttons { display: flex; align-items: center; gap: 20px; }
+        .cta-btn-white {
+            background: var(--white);
+            color: var(--blue-primary);
+            padding: 14px 36px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-main);
+        }
+        .cta-btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+        .cta-btn-ghost {
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .cta-btn-ghost:hover { text-decoration-thickness: 2px; }
+
+        /* ============ CONNECT / FOOTER ============ */
+        .connect-section {
+            padding: 48px 40px 24px;
+            background: var(--white);
+            border-top: 1px solid var(--gray-200);
+        }
+        .connect-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+        .social-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--gray-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-700);
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .social-icon:hover {
+            background: var(--blue-primary);
+            color: var(--white);
+        }
+        .footer-info {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 40px;
+            padding: 32px 0;
+            border-top: 1px solid var(--gray-200);
+        }
+        .footer-brand { }
+        .footer-logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--text-dark);
+            letter-spacing: 1.5px;
+        }
+        .footer-logo-sub {
+            font-size: 7px;
+            color: var(--gray-500);
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+        }
+        .footer-contact {
+            margin-top: 16px;
+            font-size: 12px;
+            color: var(--gray-600);
+            line-height: 2;
+        }
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        .footer-links a {
+            font-size: 12px;
+            color: var(--gray-600);
+            text-decoration: none;
+            line-height: 2;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--blue-primary); }
+
+        /* Disclaimer */
+        .disclaimer-section {
+            padding: 32px 40px;
+            background: var(--gray-50);
+            border-top: 1px solid var(--gray-200);
+        }
+        .disclaimer-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+        .disclaimer-text {
+            font-size: 11px;
+            color: var(--gray-500);
+            line-height: 1.8;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .regulatory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            max-width: 1100px;
+            margin: 24px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray-200);
+        }
+        .reg-entity {
+            font-size: 11px;
+            color: var(--gray-500);
+            line-height: 1.7;
+        }
+        .reg-entity strong {
+            color: var(--gray-700);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* ============ ANIMATIONS ============ */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 1024px) {
+            .hero-content { grid-template-columns: 1fr; gap: 40px; }
+            .hero-visual { order: -1; }
+            .hero h1 { font-size: 38px; }
+            .hero-card { max-width: 360px; margin: 0 auto; }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+            .regulatory-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .top-nav { padding: 0 20px; }
+            .nav-btn-outline { display: none; }
+            .hero { padding: 100px 20px 60px; min-height: auto; }
+            .hero h1 { font-size: 32px; }
+            .hero h2 { font-size: 16px; }
+            .hero-card-amount { font-size: 42px; }
+            .steps-section, .products-section, .terms-section, .faq-section, .trust-section { padding: 60px 20px; }
+            .section-title { font-size: 26px; }
+            .steps-grid { grid-template-columns: 1fr; gap: 24px; }
+            .steps-grid::before { display: none; }
+            .products-grid { grid-template-columns: 1fr; }
+            .terms-grid { grid-template-columns: 1fr; }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+            .cta-inner { flex-direction: column; text-align: center; gap: 24px; }
+            .cta-buttons { flex-direction: column; gap: 12px; }
+            .footer-info { grid-template-columns: 1fr; }
+            .footer-links { grid-template-columns: repeat(2, 1fr); }
+            .regulatory-grid { grid-template-columns: 1fr; }
+            .connect-section, .disclaimer-section, .cta-banner { padding-left: 20px; padding-right: 20px; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 28px; }
+            .toggle-btn { padding: 10px 20px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <a href="#" class="nav-logo">
+            <div class="nav-logo-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M13 7L11.8845 4.76892C11.5634 4.1268 11.4029 3.80573 11.1634 3.57116C10.9516 3.36373 10.6963 3.20597 10.4161 3.10931C10.0992 3 9.74021 3 9.02229 3H5.2C4.0799 3 3.51984 3 3.09202 3.21799C2.71569 3.40973 2.40973 3.71569 2.21799 4.09202C2 4.51984 2 5.07989 2 6.2V7M2 7H17.2C18.8802 7 19.7202 7 20.362 7.32698C20.9265 7.6146 21.3854 8.07354 21.673 8.63803C22 9.27976 22 10.1198 22 11.8V16.2C22 17.8802 22 18.7202 21.673 19.362C21.3854 19.9265 20.9265 20.3854 20.362 20.673C19.7202 21 18.8802 21 17.2 21H6.8C5.11984 21 4.27976 21 3.63803 20.673C3.07354 20.3854 2.6146 19.9265 2.32698 19.362C2 18.7202 2 17.8802 2 16.2V7Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+                <span class="nav-logo-text">TMGM</span>
+                <span class="nav-logo-sub">Trade The World</span>
+            </div>
+        </a>
+        <div class="nav-right">
+            <a href="#" class="nav-btn nav-btn-outline">Sign Up</a>
+            <div class="nav-lang">
+                <i class="fas fa-globe"></i> EN
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <div class="hero-badge-dot"></div>
+                    <span>LIMITED TIME PROMOTION</span>
+                </div>
+                <h1>Earn Extra <span class="highlight">Rebates</span> on Every Trade</h1>
+                <h2>Trade Forex & Gold and Receive Up to <strong style="color:#fff">$700 USD</strong> in Trading Bonus Credit*</h2>
+                <div class="hero-period">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>1 April 2026 – 30 April 2026 (MT4/MT5 Platform Time)</span>
+                </div>
+                <a href="#steps" class="hero-cta">
+                    Claim Now <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="hero-tc">*Terms and Conditions Apply</p>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-card-label">Earn Up To</div>
+                    <div class="hero-card-amount">$700</div>
+                    <div class="hero-card-sub">Trading Bonus Credit</div>
+                    <div class="hero-card-row">
+                        <span class="hero-card-row-label">Rebate per lot</span>
+                        <span class="hero-card-row-value accent">$7 USD</span>
+                    </div>
+                    <div class="hero-card-row">
+                        <span class="hero-card-row-label">Maximum lots</span>
+                        <span class="hero-card-row-value">100 lots</span>
+                    </div>
+                    <div class="hero-card-row">
+                        <span class="hero-card-row-label">Eligible products</span>
+                        <span class="hero-card-row-value">Forex & Gold</span>
+                    </div>
+                    <div class="hero-card-row">
+                        <span class="hero-card-row-label">Credit timing</span>
+                        <span class="hero-card-row-value">After campaign ends</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO GET YOUR BONUS CREDIT -->
+    <section id="steps" class="steps-section">
+        <div class="container reveal">
+            <h2 class="section-title">How To Get Your Trading Bonus Credit?</h2>
+            <div class="toggle-wrapper">
+                <div class="toggle-group">
+                    <button class="toggle-btn active" data-target="new-user" onclick="toggleUser(this)">New User</button>
+                    <button class="toggle-btn" data-target="existing-user" onclick="toggleUser(this)">Existing User</button>
+                </div>
+            </div>
+
+            <!-- New User Flow -->
+            <div id="new-user" class="steps-content">
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+                        <h3 class="step-title">Open Live Account</h3>
+                        <p class="step-desc">Create a Live Account with TMGM</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3 class="step-title">Opt in to the Promotion</h3>
+                        <p class="step-desc">Reach out to your Account Manager to opt-in</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="step-title">Fund, Trade & Earn</h3>
+                        <p class="step-desc">Fund your trading account and trade Forex and Gold during the campaign period. Bonus credit will be calculated and credited after the campaign ends — earn up to $700 USD in trading bonus credit*</p>
+                    </div>
+                </div>
+                <div class="steps-cta-wrapper">
+                    <a href="#" class="btn-primary">Open Account <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <p class="steps-tc">*Terms and Conditions apply</p>
+            </div>
+
+            <!-- Existing User Flow -->
+            <div id="existing-user" class="steps-content hidden">
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3 class="step-title">Opt-in to the Promotion</h3>
+                        <p class="step-desc">Reach out to your Account Manager to opt-in</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <h3 class="step-title">Fund & Trade</h3>
+                        <p class="step-desc">Fund your trading account and trade Forex and Gold products during the campaign period (1 – 30 April 2026)</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon"><i class="fas fa-gift"></i></div>
+                        <h3 class="step-title">Receive Your Bonus Credit</h3>
+                        <p class="step-desc">After the campaign ends, your trading bonus credit will be calculated and credited to your account — earn up to $700 USD based on your trading volume*</p>
+                    </div>
+                </div>
+                <div class="steps-cta-wrapper">
+                    <a href="https://portal.tmgm-sea.com/login" class="btn-primary">Join Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <p class="steps-tc">*Terms and Conditions apply</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ELIGIBLE PRODUCTS -->
+    <section class="products-section">
+        <div class="container reveal">
+            <h2 class="section-title">What Products Are Eligible for the Trading Bonus Credit?</h2>
+            <p class="section-subtitle">Trade the following products during the campaign to earn your bonus credit</p>
+            <div class="products-grid">
+                <div class="product-card forex">
+                    <div class="product-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3 class="product-name">Forex</h3>
+                    <p class="product-rebate">Trade 1 standard lot = <strong>$7 trading bonus credit</strong> rebate</p>
+                </div>
+                <div class="product-card gold">
+                    <div class="product-icon"><i class="fas fa-coins"></i></div>
+                    <h3 class="product-name">Gold</h3>
+                    <p class="product-rebate">Trade 1 standard lot = <strong>$7 trading bonus credit</strong> rebate</p>
+                </div>
+            </div>
+            <p class="products-note">The more you trade, the more bonus credit you earn — capped at <span>100 lots</span>.</p>
+            <p class="products-tc">*Terms and Conditions apply</p>
+        </div>
+    </section>
+
+    <!-- KEY TERMS & CONDITIONS -->
+    <section class="terms-section">
+        <div class="container reveal">
+            <h2 class="section-title">Key Terms & Conditions</h2>
+            <p class="section-subtitle">Please review the key terms before opting in</p>
+            <div class="terms-grid">
+                <div class="term-item">
+                    <div class="term-icon"><i class="fas fa-globe-americas"></i></div>
+                    <div>
+                        <div class="term-label">Eligible Countries</div>
+                        <div class="term-value">Germany, Netherlands, Italy, Belgium, Poland, Croatia, Czech Republic, Turkey, Greece, Nigeria, Kenya, UAE, Saudi Arabia, Jordan, Bahrain, Kuwait, Oman</div>
+                    </div>
+                </div>
+                <div class="term-item">
+                    <div class="term-icon"><i class="far fa-calendar-alt"></i></div>
+                    <div>
+                        <div class="term-label">Promotion Period</div>
+                        <div class="term-value">1 April 2026 00:00:00 – 30 April 2026 23:59:59 (MT4/MT5 Platform Time)</div>
+                    </div>
+                </div>
+                <div class="term-item">
+                    <div class="term-icon"><i class="fas fa-calculator"></i></div>
+                    <div>
+                        <div class="term-label">Rebate Mechanics</div>
+                        <div class="term-value">$7 USD per standard lot (Forex or Gold). Maximum: 100 lots ($700 USD). Credited after campaign ends.</div>
+                    </div>
+                </div>
+                <div class="term-item">
+                    <div class="term-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        <div class="term-label">Bonus Credit Rules</div>
+                        <div class="term-value">NOT losable, usable as margin. Cannot be cashed out. Volume counts toward TMGM Rewards.</div>
+                    </div>
+                </div>
+                <div class="term-item">
+                    <div class="term-icon"><i class="fas fa-user"></i></div>
+                    <div>
+                        <div class="term-label">Eligibility</div>
+                        <div class="term-value">Open to retail clients only. Must have at least one MT4/MT5 trading account with TMGM.</div>
+                    </div>
+                </div>
+                <div class="term-item">
+                    <div class="term-icon"><i class="fas fa-gavel"></i></div>
+                    <div>
+                        <div class="term-label">TMGM Rights</div>
+                        <div class="term-value">TMGM reserves the right to modify or terminate this promotion at any time. Market abuse may result in disqualification.</div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:24px; font-size:13px; color:var(--gray-500);">For full Terms and Conditions, please refer to the Proportional Bonus Credit Promotion Program or contact <a href="mailto:support@tmgm.com" style="color:var(--blue-primary)">support@tmgm.com</a></p>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container reveal">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Any questions? We've answered the most common ones below!</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What is the Trading Bonus Credit promotion?</h3>
+                        <div class="faq-chevron"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">The Trading Bonus Credit promotion rebates your trading commissions on eligible Forex and Gold lots in the form of trading bonus credit. For every 1 standard lot traded, you receive $7 USD in bonus credit, capped at 100 lots ($700 USD total). The rebate is calculated and credited to your account after the campaign ends.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Is the promotion available for all trading products?</h3>
+                        <div class="faq-chevron"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">No. This promotion applies to Forex and Gold products only.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Do I need to deposit beforehand? Can I withdraw during the promotion?</h3>
+                        <div class="faq-chevron"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">There is no minimum deposit requirement to participate. However, you will need a funded trading account to trade. You may withdraw funds during the promotion period, as eligibility is based solely on your eligible trading volume. The maximum rebate is capped at 100 lots ($700 USD).</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>When will I receive my trading bonus credit?</h3>
+                        <div class="faq-chevron"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Your trading bonus credit will be calculated and reviewed after the campaign ends (30 April 2026). Once approved, the bonus will typically be credited to your trading account within a few business days.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Which countries are eligible for this promotion?</h3>
+                        <div class="faq-chevron"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">This promotion is open to TMGM retail clients registered in: Germany, Netherlands, Italy, Belgium, Poland, Croatia, Czech Republic, Turkey, Greece, Nigeria, Kenya, UAE, Saudi Arabia, Jordan, Bahrain, Kuwait, and Oman.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Can I cash out the bonus credit?</h3>
+                        <div class="faq-chevron"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">No, the trading bonus credit cannot be cashed out. However, it can be used as margin for your trades, and your trading volume will be accumulated as points for TMGM Rewards.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MORE REASONS TO TRADE WITH TMGM -->
+    <section class="trust-section">
+        <div class="container reveal">
+            <h2 class="section-title">More Reasons To Trade With <span style="color:var(--blue-primary)">TMGM</span></h2>
+            <div style="height:40px"></div>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fas fa-shield-alt"></i></div>
+                    <p class="trust-title">Regulated<br>and Licensed</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fas fa-star"></i></div>
+                    <p class="trust-title">10+ Years<br>Industry Experience</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fas fa-headset"></i></div>
+                    <p class="trust-title">24/7<br>Customer Support</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fas fa-bolt"></i></div>
+                    <p class="trust-title">Best in Class<br>Trading Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GET STARTED CTA BANNER -->
+    <section class="cta-banner">
+        <div class="cta-inner">
+            <div class="cta-text">
+                <h3><span class="green">Get Started!</span></h3>
+                <p>Sign up and access the Global Markets in less than 3 minutes!</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn-white">Start Trading</a>
+                <a href="#" class="cta-btn-ghost">or Try Demo Account</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONNECT WITH US -->
+    <section class="connect-section">
+        <h3 class="connect-title">Connect with Us</h3>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="footer-info">
+            <div class="footer-brand">
+                <div class="footer-logo-text">TMGM</div>
+                <div class="footer-logo-sub">Trade The World</div>
+                <div class="footer-contact">
+                    Phone: +61 2 8039 8365<br>
+                    Fax: +61 2 8628 8388<br>
+                    Email: support@tmgm.com<br>
+                    Web: www.tmgm.com
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">Client Agreement</a>
+                <a href="#">Best Execution Policy for Trading CFDs</a>
+                <a href="#">Conflict of Interest Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Risk Warning Notice</a>
+                <a href="#">Complaint Handling Policy</a>
+                <a href="#">Hedging Counterparty Policy</a>
+                <a href="#">Swap Free Account Terms and Conditions</a>
+                <a href="#">Warning of Fully Hedged Stop Out</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="disclaimer-section">
+        <div class="disclaimer-text">
+            <p class="disclaimer-title">Disclaimer:</p>
+            <p>The information provided on this website is general in nature only and does not constitute personal financial advice. Before acting on any information on this website, you should consider the appropriateness of the information having regard to your objectives, financial situation and needs. Investing in CFDs and Margin FX Contracts carries significant risk and is not suitable for all investors. You may lose more than your initial deposit. You don't own, or have, any interest in the underlying assets. We recommend that you seek independent advice and ensure fully understand the risks involved before trading. It is important that you read and consider disclosure documents before you acquire any product listed on this website. The information and advertisements offered on this website are not intended for use by any person in any country or jurisdiction where such use is contrary to the local laws and regulations. Products and Services offered on this website are not intended for residents of the United States.</p>
+            <p style="margin-top:8px; font-style: italic;">TMGM is licensed and regulated in various jurisdictions.</p>
+        </div>
+        <div class="regulatory-grid">
+            <div class="reg-entity">
+                <strong>Trademax Australia Limited</strong>
+                trading as TMGM, is regulated by the Australian Securities and Investments Commission (ASIC), AFSL no. 436416 and is located at Tower1, 520 Bourke Street, Melbourne, VIC 3000, Australia.<br>
+                Email: support@tmgm.com.au
+            </div>
+            <div class="reg-entity">
+                <strong>Trademax Global Limited</strong>
+                trading as TMGM, is authorised and regulated by the Vanuatu Financial Services Commission (VFSC), registration number 40356 and is registered at 3rd Floor Bay View House, Les Highway, Port Vila, Vanuatu.<br>
+                Email: support@tmgm.com
+            </div>
+            <div class="reg-entity">
+                <strong>Trademax Global Markets (INT)</strong>
+                trading as TMGM, is authorised and regulated by the Financial Services Authority (FSA) of Seychelles, with licence number SD078. The company is registered at Office B11, Providence Complex, Providence, Mahé, Seychelles.<br>
+                Email: support@tmgm.com
+            </div>
+            <div class="reg-entity">
+                <strong>Trademax Global Markets International</strong>
+                Pty Ltd, trading as TMGM, is authorised and regulated by the Financial Services Commission (FSC) with the licence no. GB21026703, and is registered at C/o AXIS Corp Solutions (Mauritius) Ltd, Level 2, Sir William Newton Street, Port Louis, Mauritius.<br>
+                Email: support@tmgm.com
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Toggle New User / Existing User
+        function toggleUser(btn) {
+            document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const target = btn.getAttribute('data-target');
+            document.querySelectorAll('.steps-content').forEach(c => c.classList.add('hidden'));
+            document.getElementById(target).classList.remove('hidden');
+        }
+
+        // FAQ Accordion
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = item.classList.contains('open');
+
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(faq => {
+                faq.classList.remove('open');
+                faq.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // Open clicked (if was closed)
+            if (!isOpen) {
+                item.classList.add('open');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
